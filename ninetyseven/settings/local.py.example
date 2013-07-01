@@ -1,0 +1,18 @@
+import os
+from ninetyseven.settings import *
+
+DEBUG = True
+
+DATABASE_NAME = '97bottles'
+DATABASE_USER = 'root'
+DATABASE_PASSWORD = ''
+DATABASE_HOST = '127.0.0.1'
+
+MEDIA_ROOT = os.path.join(PROJECT_ROOT, 'static', 'ninetyseven') + '/'
+MEDIA_URL = '/static/ninetyseven/'
+
+STATIC_URL = '/static/archetype/'
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static', 'archetype')
+
+LOCAL_DEV           = True
+CACHE_BACKEND       = "dummy:///"
