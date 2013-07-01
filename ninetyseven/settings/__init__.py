@@ -74,21 +74,22 @@ INSTALLED_APPS = (
   'ninetyseven.apps.preferences',
   'ninetyseven.apps.api',
   'ninetyseven.apps.search',
-  
+
   'savoy.contrib.blogs',
   'savoy.contrib.fragments',
   'savoy.contrib.search',
   'savoy.contrib.sections',
-  
+
   'savoy.core.pages',
   'savoy.core.template_utils',
   'savoy.core.media',
   'savoy.core.new.profiles',
   'savoy.core.people',
+  'savoy.core.organizations',
   'savoy.core.geo',
-  
+
   'contact_form',
-  
+
   'haystack',
   'pagination',
   'typogrify',
@@ -101,7 +102,7 @@ INSTALLED_APPS = (
   'compress',
   # 'apibuilder',
   'registration',
-  
+
   'django.contrib.admin',
   'django.contrib.admindocs',
   'django.contrib.auth',
@@ -141,44 +142,44 @@ FLICKR_USERNAME         = "jcroft"
 BEER_MAPPING_API_KEY    = "121472bae79985ca9a56fc707a59a1cb"
 
 TIMELINES_MODELS = (
-  { 
+  {
     'model': 'beers.beer',
     'date_field': 'date_created',
     'user_field': 'created_by',
     'default': 'enabled',
   },
-  { 
+  {
     'model': 'beers.brewery',
     'date_field': 'date_created',
     'user_field': 'created_by',
     'default': 'enabled',
   },
-  { 
+  {
     'model': 'beers.userrecommendation',
     'date_field': 'date_created',
     'user_field': 'from_user',
     'default': 'enabled',
   },
-  { 
+  {
     'model': 'reviews.review',
     'date_field': 'date_created',
     'user_field': 'created_by',
     'default': 'enabled',
   },
-  { 
+  {
     'model': 'faves.fave',
     'date_field': 'date_created',
     'user_field': 'user',
     'default': 'enabled',
     'manager': 'active_objects',
   },
-  { 
+  {
     'model': 'relationships.relationship',
     'date_field': 'created',
     'user_field': 'from_user',
     'default': 'enabled',
   },
-  { 
+  {
     'model': 'profiles.profile',
     'date_field': 'user.date_joined',
     'user_field': 'user',
@@ -190,19 +191,19 @@ HAYSTACK_SEARCH_ENGINE = 'whoosh'
 HAYSTACK_WHOOSH_PATH = os.path.join(PROJECT_ROOT, "whoosh", "ninetyseven_index")
 
 SEARCH_MODELS = [
-  { 
+  {
     'model': 'tagging.tag',
     'fields': ['name'],
   },
-  { 
+  {
     'model': 'beers.beer',
     'fields': ['name','characteristics','description','brewery__name'],
   },
-  { 
+  {
     'model': 'beers.brewery',
     'fields': ['name','city__city'],
   },
-  { 
+  {
     'model': 'profiles.profile',
     'fields': ['user__username','display_name', 'city__city'],
   },
