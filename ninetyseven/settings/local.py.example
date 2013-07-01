@@ -7,8 +7,9 @@ INSTALLED_APPS.remove('timelines')
 
 DEBUG = True
 
+DATABASE_ENGINE = 'postgresql_psycopg2'
 DATABASE_NAME = '97bottles'
-DATABASE_USER = 'root'
+DATABASE_USER = ''
 DATABASE_PASSWORD = ''
 DATABASE_HOST = '127.0.0.1'
 

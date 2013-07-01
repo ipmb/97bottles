@@ -12,7 +12,7 @@ To get setup, from within the `ninetyseven` directory (ideally within a virtuale
 
 1. `cp settings/local.py.example settings/local.py`
 2. Edit `settings/local.py` as needed
-3. `pip install Pillow python-mysql`
+3. `pip install Pillow psycopg2`
 4. `./manage.py syncdb --settings=settings.local`
 7. `./manage.py runserver --settings=settings.local`
 
