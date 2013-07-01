@@ -34,7 +34,7 @@ def thumbnail(url, size='200x200',):
   This filter is a wrapper around sorl-thumbnail that provides the remote image fetching, as well as
   backwards-compatibility with the previous Savoy thumbnail filter syntax.
   """
-  import Image
+  from PIL import Image
   import os
   import urllib
   
