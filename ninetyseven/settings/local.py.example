@@ -1,6 +1,10 @@
 import os
 from ninetyseven.settings import *
 
+# FIXME: Comment out these two lines after the first `syncdb`
+INSTALLED_APPS = list(INSTALLED_APPS)
+INSTALLED_APPS.remove('timelines')
+
 DEBUG = True
 
 DATABASE_NAME = '97bottles'
