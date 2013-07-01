@@ -26,8 +26,8 @@ Last Changed Author: jeffrey.a.croft
 Last Changed Rev: 53
 Last Changed Date: 2009-03-10 14:34:10 -0600 (Tue, 10 Mar 2009)
 
-`timelines`
------------
+`timelines` (modified)
+----------------------
 
 URL: http://django-timelines.googlecode.com/svn/trunk
 Repository Root: http://django-timelines.googlecode.com/svn
@@ -39,8 +39,8 @@ Last Changed Author: jeffrey.a.croft
 Last Changed Rev: 23
 Last Changed Date: 2009-02-12 17:05:50 -0600 (Thu, 12 Feb 2009)
 
-`savoy`
--------
+`savoy` (modified)
+------------------
 
 URL: https://blueflavor.svn.beanstalkapp.com/savoy/trunk
 Repository Root: https://blueflavor.svn.beanstalkapp.com/savoy

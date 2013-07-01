@@ -14,8 +14,6 @@ To get setup, from within the `ninetyseven` directory (ideally within a virtuale
 2. Edit `settings/local.py` as needed
 3. `pip install Pillow python-mysql`
 4. `./manage.py syncdb --settings=settings.local`
-5. Comment lines to remove `timelines` app from `settings/local.py`
-6. `./manage.py syncdb --settings=settings.local`
 7. `./manage.py runserver --settings=settings.local`
 
 
@@ -23,7 +21,7 @@ To get setup, from within the `ninetyseven` directory (ideally within a virtuale
 
 * ~~Get project running locally~~
 * ~~Document local install~~
-* Test app on Postgres
+* ~~Test app on Postgres~~
 * Upgrade Django to version with security updates
 * Setup Heroku stuff (`Procfile`, S3, etc.)
 * Migrate MySQL data to Postgres and reset passwords
